@@ -1,30 +1,25 @@
 package com.haitao.test.controller;
 
-import java.io.*;
-
 /**
  * Description:
  * Created by 王海涛（ht.wang05@zuche.com） on 2017/3/20 18:27
  */
 public class Test {
 
-    public static void main(String [] args){
-        try {
-            File file = new File("D:/uploadFiles/aa.txt");
-            if (!file.exists()) {
-                file.createNewFile();
-            }
+    int i = 1 ;
 
-            FileWriter fw = new FileWriter(file.getAbsoluteFile());
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.write("2");
-            bw.close();
-
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    /*public static void main(String [] args){
+        Test test = new Test();
     }
 
+    public Test(){
+        InnerClass innerClass = new InnerClass();
+        System.out.println("Test create");
+    }
+
+    private class InnerClass{
+        public InnerClass(){
+            System.out.println("innerclass create");
+        }
+    }*/
 }
